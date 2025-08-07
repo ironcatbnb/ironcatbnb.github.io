@@ -1,293 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GhibliCZ</title>
-    <link rel="icon" type="image/x-icon" href="images/6.jpeg"> <!-- Link to favicon -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Include Bootstrap (Optional for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/partners.css">
-    <link rel="stylesheet" href="./css/roadmap.css">
-    <link rel="stylesheet" href="./css/tokenomics.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/logo.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IRONCAT - IRCAT Token</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #111;
+      color: #fff;
+      max-width: 800px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+    }
+    img.logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: #f9c846;
+    }
+    a {
+      color: #1da1f2;
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .section h2 {
+      color: #f9c846;
+    }
+    .token-info p {
+      margin: 5px 0;
+    }
+    .socials a {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="navbar-brand">
-            <span>GhibliCZ</span>
-        </a>
-        <a target="_blank" href="https://dexscreener.com/bsc/0x6cfa5cf1408b1bb9db61b8285f6f2a0d616b00b0" class="btn btn-buy-now">Buy Now</a>
-    </nav>
 
+  <header>
+    <img src="logo.png" alt="IRONCAT Logo" class="logo" />
+    <h1>IRONCAT (IRCAT)</h1>
+    <p>The Power of Decentralized Cats!</p>
+  </header>
 
-    <section class="hero-section" id="hero">
-        <div class="hero-container">
-            <div class="hero-image-container mt-5 animate-on-scroll animate__animated"
-            data-animation="animate__fadeInLeft">
-                <img src="images/6.jpeg" alt="Hero Image" class="hero-image">
-            </div>
-    
-            <!-- Hero Content on the right side -->
-            <div class="hero-content animate-on-scroll animate__animated"
-            data-animation="animate__fadeInRight">
-                <h1 class="hero-heading">$GhibliCZ</h1>
-                <p class="hero-description">
-                    GhibliCZ is now live on the Binance Smart Chain, offering an innovative ecosystem for token enthusiasts. It combines cutting-edge technology with community-driven development to provide secure, scalable solutions in the digital asset space.
-                </p>
-    
-                <!-- Logos under description -->
-                <div class="logo-container">
-                    <!-- Logo 1 -->
-                    <a href="https://x.com/GhibliCTO_BSC" target="_blank" class="logo" >
-                        <img src="./assets/xx(1).png" alt="Logo 1">
-                    </a>
-    
-                    <!-- Logo 2 -->
-                    <a href="https://t.me/ghibliCTO_group" target="_blank" class="logo" >
-                        <img src="./assets/tel.png" alt="Logo 2">
-                    </a>
-                   
-                    <!-- Logo 2 -->
-                    <a href="https://coinmarketcap.com/currencies/ghiblicz/" target="_blank" class="logo" >
-                        <img src="coinmarketcap.png" alt="Logo 2">
-                    </a>
-                    <!-- Logo 2 -->
-                    <a href="https://www.coingecko.com/en/coins/ghiblicz" target="_blank" class="logo" >
-                        <img src="coingecko.png" alt="Logo 2">
-                    </a>
-                    <!-- Logo 2 -->
-                    <a href="https://www.dextools.io/app/en/token/0x795d2710e383f33fbebe980a155b29757b6703f3?t=1743808766972" target="_blank" class="logo" >
-                        <img src="dextools.png" alt="Logo 2">
-                    </a>
-                </div>
+  <div class="section token-info">
+    <h2>Token Information</h2>
+    <p><strong>Token Name:</strong> IRONCAT</p>
+    <p><strong>Symbol:</strong> IRCAT</p>
+    <p><strong>Contract Address:</strong><br/>
+      <code>0x2afe6d4385d9b3efe698d22406a305e566634444</code>
+    </p>
+    <p><strong>Total Supply:</strong> 1,000,000,000 IRCAT</p>
+    <p><strong>Team Allocation:</strong> 4.4% (Locked)</p>
+    <p><strong>Locked Supply:</strong> 20%</p>
+  </div>
 
-                <div class="contact-link">
-                    <!-- Icon Logo -->
-                    <img src="./assets/Solscan.png" alt="Logo" class="logo-icon">
-                  
-                    <!-- Contract Address Link -->
-                    <a id="contract-address">CA: 0x795D2710E383F33fbEbe980a155b29757b6703f3</a>
-                    
-                    <!-- Copy Icon -->
-                    <span class="copy-icon" onclick="copyToClipboard()">
-                        <i class="fa fa-copy"></i>
-                    </span>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+  <div class="section socials">
+    <h2>Community & Updates</h2>
+    <p>
+      <a href="https://x.com/IRONCATBNB" target="_blank">🐦 Twitter / X</a>
+      <a href="https://t.me/+1DRPlzQKZ9xkYTBl" target="_blank">💬 Telegram</a>
+    </p>
+  </div>
 
-    <section class="roadmap-section" id="roadmap">
-        <h2 class="roadmap-heading animate-on-scroll animate__animated" data-animation="animate__fadeInDOwn">Listings</h2>
-    
-        <div class="roadmap-container">
-            <!-- Timeline Line -->
-            <div class="timeline-line"></div>
-    
-            <!-- Roadmap Phase Cards -->
-            <div class="phase-card phase-card-right animate-on-scroll animate__animated" data-animation="animate__fadeInLeft">
-                <img src="mexc.jpeg" style="max-width: 100%;">
-            </div>
-    
-            <div class="phase-card phase-card-left animate-on-scroll animate__animated" data-animation="animate__fadeInUp">
-                <img src="lbank.jpeg" style="max-width: 100%;">
-            </div>
-    
-            <div class="phase-card phase-card-right animate-on-scroll animate__animated" data-animation="animate__fadeInRight">
-                <img src="binance.jpeg" style="max-width: 100%;">
-            </div>
-    
-           
-        </div>
-    </section>
+  <footer>
+    &copy; 2025 IRONCAT Project. All rights reserved.
+  </footer>
 
-    <section class="roadmap-section" id="memes">
-        <h2 class="roadmap-heading animate-on-scroll animate__animated" data-animation="animate__fadeInDown">Media</h2>
-        <div class="memes-container d-flex flex-wrap justify-content-center">
-            <!-- Images -->
-            <img src="images/1.jpeg" class="meme-image" alt="Meme 1" onclick="openLightbox('images/1.jpeg')">
-            <img src="images/2.jpeg" class="meme-image" alt="Meme 2" onclick="openLightbox('images/2.jpeg')">
-            <img src="images/3.jpeg" class="meme-image" alt="Meme 3" onclick="openLightbox('images/3.jpeg')">
-            <img src="images/4.jpeg" class="meme-image" alt="Meme 4" onclick="openLightbox('images/4.jpeg')">
-            <img src="images/5.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/5.jpeg')">
-            <img src="images/6.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/6.jpeg')">
-            <img src="images/7.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/7.jpeg')">
-            <img src="images/8.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/8.jpeg')">
-            <img src="images/9.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/9.jpeg')">
-            <img src="images/10.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/10.jpeg')">
-            <img src="images/11.jpeg" class="meme-image" alt="Meme 5" onclick="openLightbox('images/11.jpeg')">
-        </div>
-    
-        <!-- Lightbox -->
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <img id="lightbox-image" src="" alt="Expanded Meme">
-        </div>
-    </section>
-    
-    <section class="roadmap-section" id="roadmap">
-        <h2 class="roadmap-heading animate-on-scroll animate__animated" data-animation="animate__fadeInDOwn">where are we</h2>
-    
-        <div class="roadmap-container">
-            <!-- Timeline Line -->
-            <div class="timeline-line"></div>
-    
-            <!-- Roadmap Phase Cards -->
-            <div class="phase-card phase-card-right animate-on-scroll animate__animated" data-animation="animate__fadeInLeft">
-                <a href="https://x.com/binance/status/1905170012090102222?t=X5Tck4lsV7sgoXYbTDfHBw&s=19" target="_blank">
-                    <img src="w1.jpg" style="max-width: 100%; max-height: 100%;">
-                </a>
-            </div>
-    
-            <div class="phase-card phase-card-left animate-on-scroll animate__animated" data-animation="animate__fadeInUp">
-                <a href="https://x.com/cz_binance/status/1905264631213617590?t=vIMoBId4Ii9BOR2cyIepfg&s=19" target="_blank">
-                    <img src="w2.jpg" style="max-width: 100%; max-height: 100%;">
-                </a>
-            </div>
-           
-        </div>
-    </section>
-    
-    <section class="logos-section2 d-flex justify-content-center align-items-center" id="Logos" style="height: 20vh;">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <div class="logo2">
-                        <a href="https://dexscreener.com/bsc/0x6cfa5cf1408b1bb9db61b8285f6f2a0d616b00b0">
-                            <img src="./assets/EGLogo.jpg" alt="Logo 1" class="img-fluid">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="logo2">
-                        <a href="https://www.dextools.io/app/en/token/0x795d2710e383f33fbebe980a155b29757b6703f3?t=1743279250111">
-                        <img src="./assets/MarketLogo.jpg" alt="Logo 2" class="img-fluid"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-
-    <footer class="footer-section">
-        <div class="footer-container animate-on-scroll animate__animated"
-        data-animation="animate__fadeInUp">
-           
-            
-            <div class="copyright-section">
-                <p class="copyright-text">&copy;2025 by GhibliCZ. All rights reserved!</p>
-            </div>
-        </div>
-    </footer>
-    
-
-    <script>
-			// Detect when the page is scrolled
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    
-    if (window.scrollY > 50) {  // When you scroll 50px or more
-        navbar.classList.remove('scrolled');
-    } else {
-        
-        navbar.classList.add('scrolled');
-    }
-});
-
-    </script>
-
-    <script>
-    function copyToClipboard() {
-        // Get the full text from the link
-        const fullText = document.getElementById("contract-address").textContent;
-
-        // Remove the "CA:" prefix
-        const addressOnly = fullText.replace(/^CA:\s*/, "").trim();
-
-        // Copy the address to the clipboard
-        navigator.clipboard.writeText(addressOnly).then(() => {
-        
-        
-        });
-    }
-    </script>
-
-    <script>
-            const hamburger = document.querySelector('.hamburger');
-        const navbarLinks = document.querySelector('.navbar-links');
-
-        hamburger.addEventListener('click', () => {
-            navbarLinks.classList.toggle('active');
-        });
-
-
-    </script>
-
-<script>
-    // Function to handle the intersection of the target elements
-    function handleIntersection(entries, observer) {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const targetElement = entry.target;
-                const animationClass = targetElement.dataset.animation;
-
-                if (animationClass) {
-                    targetElement.classList.add(animationClass);
-                    // Remove the animate-on-scroll class to prevent animation on subsequent scrolls
-                    targetElement.classList.remove('animate-on-scroll');
-                }
-            }
-        });
-    }
-
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0,
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    // Observe all elements with the "animate-on-scroll" class
-    const animatedElements = document.querySelectorAll('.animate-on-scroll');
-    animatedElements.forEach((element) => {
-        observer.observe(element);
-    });
-
-    function openLightbox(imageSrc) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
-
-    // Set the image source
-    lightboxImage.src = imageSrc;
-
-    // Display the lightbox
-    lightbox.style.display = 'flex';
-}
-
-function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.style.display = 'none';
-}
-
-</script>
-    
-    <!-- Include Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    
 </body>
 </html>
-
-
